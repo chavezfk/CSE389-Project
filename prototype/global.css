@@ -8,8 +8,7 @@ body {
 	color: black;
 }
 
-header {
-	border: 10px solid #002247;
+header, footer {
 	color: #333;
 	padding: 10px;
 	height: 100px;
@@ -18,16 +17,11 @@ header {
 	background-color: #002247;
 }
 
-#banner {
+footer {
+	color: white;
 	text-align: center;
-	width: 100%;
 }
 
-#banner iframe{
-	height: 140px;
-	width: 1040px;
-	border: none;
-}
 
 #navbar {
 	display: inline-block;
@@ -59,11 +53,92 @@ header {
 	float: right;
 	display: relative;
 	display: inline-block;
-	color: white;
 }
-
-
 
 #account_info td {
 	border: 1px solid gray;
+	background-color: white;
+	color: black;
 }
+
+#account_info td:hover {
+	background-color: #333;
+	color: white;
+	border: 1px solid #333;
+}
+
+#manager_league_main {
+	width: 1000px;
+	height: 1000px;
+	background-color: #666a72;
+	margin: 0px auto 0px auto;
+	padding: 10px
+}
+
+#selectors {
+	text-align: center;
+	position: relative;
+	width: 250px;
+	height: 360px;
+	left: 50px;
+	top: 50px;
+	background-color: LightGray;
+}
+
+#selectors select{
+	width: 180px;
+}
+
+#selectors button {
+	text-align: center;
+	font-size: 15pt;
+	width: 180px;
+	height: 50px;
+}
+
+#mini_schedule {
+	position: relative;
+	display: inline-block;
+	left: 350px;
+	bottom: 310px;
+	font-size: 20pt;
+	height: 360px;
+	width: 537px;
+	overflow: auto;
+}
+
+#mini_schedule table {
+	background-color: white;
+	border: 1px solid black;
+}
+
+#mini_schedule td {
+	border: 1px solid black;
+}
+
+#mini_schedule textarea {
+	font-size: 14pt;
+}
+
+#team_stats {
+	position: relative;
+	left: 50px;
+	bottom: 270px;
+	font-size: 20pt;
+	height: 490px;
+	overflow: auto;
+	width: 920px;
+}
+
+#team_stats table {
+	background-color: white;
+}
+
+#team_stats td {
+	text-align: center;
+}
+
+#team_stats th {
+	padding: 10px;
+}
+
