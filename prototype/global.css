@@ -75,6 +75,24 @@ footer {
 	padding: 10px
 }
 
+#captain_home {
+	width: 1000px;
+	height: 1000px;
+	background-color: #666a72;
+	margin: 0px auto 0px auto;
+	padding: 10px;
+}
+
+#upcoming_games {
+	text-align: center;
+	position: relative;
+	width: 220px;
+	height: 160px;
+	left: 15px;
+	top: 5px;
+	background-color: White;
+}
+
 #selectors {
 	text-align: center;
 	position: relative;
@@ -83,6 +101,23 @@ footer {
 	left: 50px;
 	top: 50px;
 	background-color: LightGray;
+}
+
+#summary {
+	text-align: center;
+	position: relative;
+	width: 250px;
+	height: 360px;
+	left: 50px;
+	top: 50px;
+	background-color: LightGray;
+}
+
+#summary button {
+	text-align: center;
+	font-size: 12pt;
+	width: 180px;
+	height: 50px;
 }
 
 #selectors select{
@@ -130,6 +165,18 @@ footer {
 	width: 920px;
 }
 
+#team_stats_right {
+	position: relative;
+	display: inline-block;
+	left: 350px;
+	bottom: 310px;
+	font-size: 20pt;
+	height: 360px;
+	width: 560px;
+	overflow: auto;
+	
+}
+
 #team_stats table {
 	background-color: white;
 }
@@ -139,6 +186,19 @@ footer {
 }
 
 #team_stats th {
+	padding: 10px;
+}
+
+#team_stats_right table {
+	background-color: white;
+}
+
+#team_stats_right td{
+	text-align: center;
+	
+}
+
+#team_stats_right th {
 	padding: 10px;
 }
 
