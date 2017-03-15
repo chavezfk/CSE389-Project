@@ -76,14 +76,6 @@ main {
 	padding: 10px
 }
 
-#captain_home {
-	width: 1000px;
-	height: 1000px;
-	background-color: #666a72;
-	margin: 0px auto 0px auto;
-	padding: 10px;
-}
-
 #upcoming_games {
 	text-align: center;
 	position: relative;
@@ -110,6 +102,15 @@ main {
 	width: 250px;
 	height: 360px;
 	left: 50px;
+	top: 50px;
+	background-color: LightGray;
+}
+
+#request {
+	position: relative;
+	width: 600px;
+	height: 400px;
+	left: 200px;
 	top: 50px;
 	background-color: LightGray;
 }
@@ -169,14 +170,12 @@ main {
 
 #team_stats_right {
 	position: relative;
-	display: inline-block;
 	left: 350px;
-	bottom: 310px;
+	bottom: 300px;
 	font-size: 20pt;
-	height: 360px;
-	width: 560px;
+	height: 490px;
 	overflow: auto;
-	
+	width: 920px;
 }
 
 #team_stats table {
@@ -191,7 +190,6 @@ main {
 	padding: 10px;
 }
 
-<<<<<<< HEAD
 #team_stats_right table {
 	background-color: white;
 }
@@ -205,7 +203,6 @@ main {
 	padding: 10px;
 }
 
-=======
 #bracket {
 	position: relative;
 	left: 10px;
