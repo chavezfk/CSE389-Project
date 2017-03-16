@@ -268,5 +268,48 @@ main {
 	height: 50px;
 }
 
+#player_view_nav {
+	text-align: center;
+	position: relative;
+	width: 250px;
+	height: 700px;
+	left: 50px;
+	top: 50px;
+	background-color: LightGray;
+}
 
->>>>>>> 01cf8afad26bb8b41d25785251cb5312756128d4
+#player_view_nav select{
+	width: 180px;
+}
+
+#player_view_nav button {
+	text-align: center;
+	font-size: 15pt;
+	width: 180px;
+	height: 50px;
+}
+
+#player_list {
+	position: relative;
+	display: inline-block;
+	left: 350px;
+	bottom: 650px;
+	font-size: 20pt;
+	height: 700px;
+	width: 537px;
+	overflow: auto;
+}
+
+#player_list table {
+	background-color: white;
+	border: 1px solid black;
+}
+
+#player_list td {
+	border: 1px solid black;
+}
+
+#player_list textarea {
+	font-size: 14pt;
+	resize: none;
+}
