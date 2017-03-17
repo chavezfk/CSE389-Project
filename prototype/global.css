@@ -313,3 +313,152 @@ main {
 	font-size: 14pt;
 	resize: none;
 }
+
+#schedule_view_nav {
+    text-align: center;
+	position: relative;
+	width: 250px;
+	height: 250px;
+	left: 50px;
+	top: 50px;
+	background-color: LightGray;
+}
+#schedule_view_nav select{
+    width: 180px;
+}
+#schedule_list {
+	position: relative;
+	left: 350px;
+	bottom: 300px;
+	font-size: 20pt;
+	height: 490px;
+	overflow: auto;
+	width: 920px;
+}
+
+#schedule_list table {
+	background-color: white;
+	border: 1px solid black;
+}
+
+#schedule_list td {
+	border: 1px solid black;
+}
+#schedule_edit_link{
+	border: none;
+}
+#hide_checkbox {
+    width: 15px;
+    height: 15px;
+    font-size: 10pt;
+}
+
+#login {
+    background-color: #002247;
+    border: 2px solid white;
+    padding: 10px;
+    padding-top: 0px;
+    color: white;
+    width: 250px;
+    margin: 10% auto 0 auto;
+}
+
+#login table{
+	background-color: white;
+    border: 2px solid #002247;
+    width: 250px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+
+#login table input{
+    float: right;
+}
+
+#login .title{
+    text-align: right;
+}
+
+#game_update_form {
+    background-color: #002247;
+    border: 2px solid white;
+    padding: 10px;
+    color: white;
+    width: 500px;
+    height: 500px;
+    margin: 10% auto 0 auto;
+}
+
+#game_update_form .submit {
+    margin-top: 50px;
+    margin-left: 25%;
+}
+
+#game_update_left {
+    float: left;
+    width: 50%;
+    background-color: white;
+}
+#game_update_left .header{
+    width: 100%;
+    text-align: center;
+    border: 4px solid black;
+}
+
+#left_score{
+    width: 50px;
+    float: right;
+    text-align: center;
+    font-size: 15pt;
+    border: 2px dotted black;
+}
+
+#gu_left_players table{
+    width: 100%;
+    border: 1px solid black;
+}
+#gu_left_players td{
+    border: 1px solid black;
+}
+#gu_left_players .cards{
+    width: 25px;
+    text-align: center;
+}
+
+#game_update_right {
+    float: right;
+    width: 50%;
+    background-color: white;
+}
+
+#game_update_right .header{
+    width: 100%;
+    text-align: center;
+    border: 4px solid black;
+}
+
+#right_score{
+    width: 50px;
+    float: left;
+    text-align: center;
+    font-size: 15pt;
+    border: 2px dotted black;
+}
+
+#gu_right_players table{
+    width: 100%;
+    border: 1px solid black;
+}
+#gu_right_players td{
+    border: 1px solid black;
+}
+#gu_right_players .cards{
+    width: 25px;
+    text-align: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
