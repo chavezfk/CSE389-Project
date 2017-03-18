@@ -309,7 +309,6 @@ main {
 	width: 537px;
 	overflow: auto;
 }
-
 #player_list table {
 	background-color: white;
 	border: 1px solid black;
@@ -320,6 +319,31 @@ main {
 }
 
 #player_list textarea {
+	font-size: 14pt;
+	resize: none;
+}
+
+#player_list_ref {
+	position: relative;
+	display: inline-block;
+	left: 350px;
+	bottom: 650px;
+	font-size: 20pt;
+	height: 700px;
+	width: 600px;
+	overflow: auto;
+}
+
+#player_list_ref table {
+	background-color: white;
+	border: 1px solid black;
+}
+
+#player_list_ref td {
+	border: 1px solid black;
+}
+
+#player_list_ref textarea {
 	font-size: 14pt;
 	resize: none;
 }
