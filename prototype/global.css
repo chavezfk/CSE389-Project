@@ -361,6 +361,7 @@ main {
     color: white;
     width: 250px;
     margin: 10% auto 0 auto;
+    margin-bottom: 100px;
 }
 
 #login table{
