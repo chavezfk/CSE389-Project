@@ -36,6 +36,11 @@ footer {
 
 }
 
+#navbar a {
+	text-decoration: none;
+	color: black;
+}
+
 #navbar li {
     display: inline-block;
     background-color: white;
@@ -45,6 +50,11 @@ footer {
 }
 
 #navbar li:hover {
+	background-color: #333;
+	color: white;
+}
+
+#navbar li a:hover {
 	background-color: #333;
 	color: white;
 }
