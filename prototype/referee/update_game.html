@@ -1,104 +1,189 @@
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="../global.css" />
-    </head>
-    
-    <body>
-        <form action="schedule.html">
-        <div id="game_update_form">
-            <div id="game_update_left">
-                <table class="header">
-                    <tr>
-                        <td style="font-size: 15pt">Bears</td>
-                        <td><input id="left_score" type="number" value="1"/></td>
-                    </tr>
-                </table>
-                <div id="gu_right_players">
-                    <table>
-                        <tr>
-                        <th>Name</th><th>Y Cards</th><th>R Cards</th>
-                        </tr>
-                        <tr>
-                        <td>Doe, James</td>
-                        <td><input class="cards" type="number" value="0" /></td>
-                        <td><input class="cards" type="number" value="1" /></td>
-                        </tr>
-                        <tr>
-                        <td>Doe, James</td>
-                        <td><input class="cards" type="number" value="0" /></td>
-                        <td><input class="cards" type="number" value="1" /></td>
-                        </tr>
-                        <tr>
-                        <td>Doe, James</td>
-                        <td><input class="cards" type="number" value="0" /></td>
-                        <td><input class="cards" type="number" value="1" /></td>
-                        </tr>
-                        <tr>
-                        <td>Doe, James</td>
-                        <td><input class="cards" type="number" value="0" /></td>
-                        <td><input class="cards" type="number" value="1" /></td>
-                        </tr>
-                        <tr>
-                        <td>Doe, James</td>
-                        <td><input class="cards" type="number" value="0" /></td>
-                        <td><input class="cards" type="number" value="1" /></td>
-                        </tr>
-                        <tr>
-                        <td>Doe, James</td>
-                        <td><input class="cards" type="number" value="0" /></td>
-                        <td><input class="cards" type="number" value="1" /></td>
-                        </tr>
-                    </table>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../global.css" />
+	</head>
+	<body>
+		<header>
+			<img src="../logo.png" alt="logo" style="height: 100px; width=auto">
+			<ul id="navbar">
+				<li>Schedule</li>
+				<li>Players</li>
+				<li style="background-color: #333; color: white;">Leagues</li>
+			</ul>
+			<div id="account_info">
+				<table>
+					<tr><td>Hi, Sam &#x25BC;</td></tr>
+					<tr><td>Settings</td></tr>
+					<tr><td>Logout</td></tr>
+				</table>
+			</div>
+		</header>
+        <main>
+            <div id="schedule_view_nav">
+                <div id="league_selector" style="font-size: 15pt">
+                    <h3>Select League</h3>
+                    <select>
+                        <option value="default"> Select... </option>
+                        <option value="Soccer A" selected>Soccer A</option>
+                        <option value="Soccer B">Soccer B</option>
+                    </select>
                 </div>
             </div>
-            <div id="game_update_right">
-                <table class="header">
+            <div id="schedule_list">
+                <h3>Game Schedule</h3>
+                <table>
                     <tr>
-                        <td><input id="right_score" type="number" value="4"/></td>
-                        <td style="font-size: 15pt">Lions</td>
+                        <th>Date</th>
+                        <th>Team A</th>
+                        <th>Team B</th>
+                        <th>Score A</th>
+                        <th>Score B</th>
+                    </tr>
+                    <tr>
+                        <td>3/14/2017</td>
+                        <td>Bears</td>
+                        <td>Lions</td>
+                        <td>1</td>
+                        <td>4</td>
+                        <td style="border: none"><a href="../login.html">edit</a>
+                    </tr>
+                    <tr>
+                        <td>3/17/2017</td>
+                        <td>Tigers</td>
+                        <td>Lions</td>
+                        <td>2</td>
+                        <td>6</td>
+                        <td style="border: none"><a href="../login.html">edit</a>
+                    </tr>
+                    <tr>
+                        <td>3/20/2017</td>
+                        <td>Bears</td>
+                        <td>Tigers</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td style="border: none"><a href="../login.html">edit</a>
+                    </tr>
+                    <tr>
+                        <td>3/21/2017</td>
+                        <td>Tigers</td>
+                        <td>Lions</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td style="border: none"><a href="../login.html">edit</a>
+                    </tr>
+                    <tr>
+                        <td>3/21/2017</td>
+                        <td>Bears</td>
+                        <td>Lions</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td style="border: none"><a href="login.html">edit</a>
                     </tr>
                 </table>
-                <div id="gu_left_players">
-                    <table>
-                        <tr>
-                        <th>Name</th><th>Y Cards</th><th>R Cards</th>
-                        </tr>
-                        <tr>
-                        <td>Doe, James</td>
-                        <td><input class="cards" type="number" value="0" /></td>
-                        <td><input class="cards" type="number" value="1" /></td>
-                        </tr>
-                        <tr>
-                        <td>Doe, James</td>
-                        <td><input class="cards" type="number" value="0" /></td>
-                        <td><input class="cards" type="number" value="1" /></td>
-                        </tr>
-                        <tr>
-                        <td>Doe, James</td>
-                        <td><input class="cards" type="number" value="0" /></td>
-                        <td><input class="cards" type="number" value="1" /></td>
-                        </tr>
-                        <tr>
-                        <td>Doe, James</td>
-                        <td><input class="cards" type="number" value="0" /></td>
-                        <td><input class="cards" type="number" value="1" /></td>
-                        </tr>
-                        <tr>
-                        <td>Doe, James</td>
-                        <td><input class="cards" type="number" value="0" /></td>
-                        <td><input class="cards" type="number" value="1" /></td>
-                        </tr>
-                        <tr>
-                        <td>Doe, James</td>
-                        <td><input class="cards" type="number" value="0" /></td>
-                        <td><input class="cards" type="number" value="1" /></td>
-                        </tr>
-                    </table>
-                </div>
+                <input id="hide_checkbox" type="checkbox">hide completed games</input>
             </div>
-            <input class="submit" type="submit" value="Save Changes"/>
-            <input type="button" onclick="location.href='schedule.html'" value="Cancel"/>
-        </div>
-        </form>
-    </body>
+        </main>
+        <footer>
+			<br><br><p>Brought to you by Joshua Ashinhurst, Carlos Rubio, and Franz Chavez as part of CSE389: Human Computer Interaction Project</p>
+		</footer>
+	</body>
+	<div id="grayarea"></div>
+		<div style="position:relative; top: -1200px; z-index: 3;">
+			<form action="schedule.html">
+			<div id="game_update_form">
+				<div id="game_update_left">
+					<table class="header">
+						<tr>
+							<td style="font-size: 15pt">Bears</td>
+							<td><input id="left_score" type="number" value="1"/></td>
+						</tr>
+					</table>
+					<div id="gu_right_players">
+						<table>
+							<tr>
+							<th>Name</th><th>Y Cards</th><th>R Cards</th>
+							</tr>
+							<tr>
+							<td>Doe, James</td>
+							<td><input class="cards" type="number" value="0" /></td>
+							<td><input class="cards" type="number" value="1" /></td>
+							</tr>
+							<tr>
+							<td>Doe, James</td>
+							<td><input class="cards" type="number" value="0" /></td>
+							<td><input class="cards" type="number" value="1" /></td>
+							</tr>
+							<tr>
+							<td>Doe, James</td>
+							<td><input class="cards" type="number" value="0" /></td>
+							<td><input class="cards" type="number" value="1" /></td>
+							</tr>
+							<tr>
+							<td>Doe, James</td>
+							<td><input class="cards" type="number" value="0" /></td>
+							<td><input class="cards" type="number" value="1" /></td>
+							</tr>
+							<tr>
+							<td>Doe, James</td>
+							<td><input class="cards" type="number" value="0" /></td>
+							<td><input class="cards" type="number" value="1" /></td>
+							</tr>
+							<tr>
+							<td>Doe, James</td>
+							<td><input class="cards" type="number" value="0" /></td>
+							<td><input class="cards" type="number" value="1" /></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="game_update_right">
+					<table class="header">
+						<tr>
+							<td><input id="right_score" type="number" value="4"/></td>
+							<td style="font-size: 15pt">Lions</td>
+						</tr>
+					</table>
+					<div id="gu_left_players">
+						<table>
+							<tr>
+							<th>Name</th><th>Y Cards</th><th>R Cards</th>
+							</tr>
+							<tr>
+							<td>Doe, James</td>
+							<td><input class="cards" type="number" value="0" /></td>
+							<td><input class="cards" type="number" value="1" /></td>
+							</tr>
+							<tr>
+							<td>Doe, James</td>
+							<td><input class="cards" type="number" value="0" /></td>
+							<td><input class="cards" type="number" value="1" /></td>
+							</tr>
+							<tr>
+							<td>Doe, James</td>
+							<td><input class="cards" type="number" value="0" /></td>
+							<td><input class="cards" type="number" value="1" /></td>
+							</tr>
+							<tr>
+							<td>Doe, James</td>
+							<td><input class="cards" type="number" value="0" /></td>
+							<td><input class="cards" type="number" value="1" /></td>
+							</tr>
+							<tr>
+							<td>Doe, James</td>
+							<td><input class="cards" type="number" value="0" /></td>
+							<td><input class="cards" type="number" value="1" /></td>
+							</tr>
+							<tr>
+							<td>Doe, James</td>
+							<td><input class="cards" type="number" value="0" /></td>
+							<td><input class="cards" type="number" value="1" /></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<input class="submit" type="submit" value="Save Changes"/>
+				<input type="button" onclick="location.href='schedule.html'" value="Cancel"/>
+			</div>
+			</form>
+	</div>
 </html>
