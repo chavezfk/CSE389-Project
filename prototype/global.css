@@ -173,7 +173,7 @@ main {
 	left: 50px;
 	bottom: 270px;
 	font-size: 20pt;
-	height: 490px;
+	height: auto;
 	overflow: auto;
 	width: 920px;
 }
