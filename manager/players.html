@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Players</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="../js/mindmup-editabletable.js"></script>
+</head>
+<body>
+	<div class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="../index.html">NMT Intramural Scheduler</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="schedule.html">Schedule</a></li>
+				<li><a href="leagues.html">Leagues</a></li>
+				<li class="active"><a href="#">Players</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Hi, Manager <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </li>
+			</ul>
+		</div>
+	</div>
+    <div class="container">
+        <div class="col-sm-12">
+            <h2 class="text-center well">Player Editor</h2>
+        </div>
+        <div class="col-sm-4">
+            <p>Select League and Team Here</p>
+        </div>
+        <div class="col-sm-8">
+            <p>Click Table Entry to Edit</p>
+        </div>
+        <div class="col-sm-4">
+            <select class="form-control" id="sel1">
+                <option>Select League...</option>
+                <option>League A</option>
+                <option>League B</option>
+                <option>League C</option>
+            </select>
+            <select class="form-control" id="sel1">
+                <option>Select Team...</option>
+                <option>Lions</option>
+                <option>Tigers</option>
+                <option>Bears</option>
+            </select>
+        </div>
+        <div class="col-sm-8">
+            <table class="table table-bordered" id="player_table">
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Team</th>
+                        <th>Status</th>
+                        <th>Holds</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Bears</td>
+                        <td>Registered</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Bears</td>
+                        <td>Registered</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Bears</td>
+                        <td>Registered</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Bears</td>
+                        <td>Registered</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Bears</td>
+                        <td>Registered</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Bears</td>
+                        <td>Registered</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Bears</td>
+                        <td>Registered</td>
+                        <td>No</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">Brought to you by Joshua Ashinhurst, Carlos Rubio, and Franz Chavez as part of CSE389 Project</span>
+        </div>
+    </footer>
+	<script>
+        $("#player_table").editableTableWidget().find('td:first').focus();
+	</script>
+</body>
+</html>
