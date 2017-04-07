@@ -1,0 +1,33 @@
+Theme: League Scheduler
+Group name: The Sons of Pitches
+Members in group: Josh, Franz, Carlos
+
+1) Backgroud:
+	After extensive analysis and debate, the group came to the agreement that this theme would be the best fit for the group. Every memeber of the team is comfortable working with this theme, although there are different levels of understanding and knowledge about the theme among the members.
+	A reason why we picked this theme was because it's a real-world need. Once there is a prototype, we have the resources to meet with people who will truly use it if this application was available to them. We will have real feedback from every different kind of user and we will be able to contact them in a daily basis, if needed.
+
+2) Users:
+	2.1) League Manager
+		2.1.1) Persona
+			
+		2.1.2) Scenario
+			
+		2.1.3) Tasks
+			
+	2.2) League Captain
+		2.2.1) Persona
+			
+		2.2.2) Scenario
+			
+		2.2.3) Tasks
+			
+	2.3) Regular Users
+		2.3.1) Persona
+			
+		2.3.2) Scenario
+			
+		2.3.3) Tasks
+			
+
+
+
