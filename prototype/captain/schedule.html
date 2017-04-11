@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Leagues</title>
+  <title>Schedule</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
 				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Hi, Captain <span class="caret"></span></a>
 	        <ul class="dropdown-menu">
 	        	<li><a href="#">Settings</a></li>
-	        	<li><a href="#">Logout</a></li>
+	        	<li><a href="../index.html">Logout</a></li>
 	        </ul>
 	      </li>
 			</ul>
@@ -67,7 +67,30 @@
 				</tr>
 			</tbody>
 			</table>
-            <a type="button" class="btn btn-default" href="#">Request Schedule Change</a>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#schedule-modal">Request Schedule Change</button>
+            <div id="schedule-modal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Schedule Change Request</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="sel1">Select Reason</label>
+                                <select class="form-control" id="sel1">
+                                    <option>Personal Conflict</option>
+                                    <option>Class Conflict</option>
+                                    <option>Other (Specify in Comments)</option>
+                                <label for="comment">Comments: (Please specify player affected)</label>
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Confirm Request</button>
+                        </div>
+                    </div>
+                </div>  
+            </div> 
 		</div>
 		<div class="col-sm-8">
 			<h2>Current Team Stats</h2>
