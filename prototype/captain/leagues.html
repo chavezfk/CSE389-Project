@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Players</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="../js/mindmup-editabletable.js"></script>
+</head>
+<body>
+	<div class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="../index.html">NMT Intramural Scheduler</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="schedule.html">Schedule</a></li>
+				<li class="active"><a href="leagues.html">Leagues</a></li>
+				<li><a href="players.html">Players</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Hi, Captain <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </li>
+			</ul>
+		</div>
+	</div>
+    <div class="container">
+        <div class="col-sm-12">
+            <h2 class="text-center well">League Viewer</h2>
+        </div>
+        <div class="col-sm-4">
+            <h4>Select League and Team Here</h4>
+        </div>
+        <div class="col-sm-8">
+            <h4>Click Table Entry to Edit</h4>
+        </div>
+        <div class="col-sm-4 text-center vertical-center">
+            <select class="form-control" id="sel1">
+                <option>Select League...</option>
+                <option>League A</option>
+                <option>League B</option>
+                <option>League C</option>
+            </select>
+            <select class="form-control" id="sel1">
+                <option>Select Team...</option>
+                <option>Lions</option>
+                <option>Tigers</option>
+                <option>Bears</option>
+            </select>
+            <br>
+            <a type="button" class="btn btn-default" href="bracket.html">Preview Bracket</a>
+        </div>
+        <div class="col-sm-8">
+            <table class="table table-bordered" id="team_table">
+                <thead>
+                    <tr>
+                        <th>Match</th>
+                        <th>Home</th>
+                        <th>Away</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+					<tr>
+						<td>1</td>
+						<td>Bears</textarea rows="1" cols="10"></td>
+						<td>Lions</td>
+						<td>01-02-2017</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Cats</textarea rows="1" cols="10"></td>
+						<td>Bears</td>
+						<td>01-03-2017</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Bears</textarea rows="1" cols="10"></td>
+						<td>Lions</td>
+						<td>01-03-2017</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Deers</textarea rows="1" cols="10"></td>
+						<td>Falcons</td>
+						<td>01-04-2017</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>Falcons</textarea rows="1" cols="10"></td>
+						<td>Wildebeasts</td>
+						<td>01-08-2017</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>Tigers</textarea rows="1" cols="10"></td>
+						<td>Lions</td>
+						<td>01-10-2017</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>Wildebeasts</textarea rows="1" cols="10"></td>
+						<td>Falcons</td>
+						<td>01-11-2017</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>Tigers</textarea rows="1" cols="10"></td>
+						<td>Cats</td>
+						<td>01-15-2017</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>Bears</textarea rows="1" cols="10"></td>
+						<td>Cats</td>
+						<td>01-20-2017</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>Falcons</textarea rows="1" cols="10"></td>
+						<td>Tigers</td>
+						<td>01-22-2017</td>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td>Falcons</textarea rows="1" cols="10"></td>
+						<td>Lions</td>
+						<td>01-23-2017</td>
+					</tr>
+					<tr>
+						<td>12</td>
+						<td>Cats</textarea rows="1" cols="10"></td>
+						<td>Tigers</td>
+						<td>01-24-2017</td>
+					</tr>
+					<tr>
+						<td>13</td>
+						<td>Tigers</textarea rows="1" cols="10"></td>
+						<td>Lions</td>
+						<td>01-26-2017</td>
+					</tr>
+                </tbody>
+            </table>
+        </div>
+		<div class="col-sm-12">
+			<h2 class="text-center">Current Team Stats</h2>
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Team</th>
+						<th><a data-toggle="tooltip" title="Games Played" class="nounderline">P</a></th>
+						<th><a data-toggle="tooltip" title="Wins" style="text-decoration: none;">W</a></th>
+						<th><a data-toggle="tooltip" title="Draws" style="text-decoration: none;">D</a></th>
+						<th><a data-toggle="tooltip" title="Losses" style="text-decoration: none;">L</a></th>
+						<th><a data-toggle="tooltip" title="" style="text-decoration: none;">GF</a></th>
+						<th><a data-toggle="tooltip" title="" style="text-decoration: none;">GA</a></th>
+						<th><a data-toggle="tooltip" title="" style="text-decoration: none;">GD</a></th>
+						<th><a data-toggle="tooltip" title="Points" style="text-decoration: none;">PTS</a></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Bears</td>
+						<td>3</td>
+						<td>3</td>
+						<td>0</td>
+						<td>0</td>
+						<td>15</td>
+						<td>1</td>
+						<td>14</td>
+						<td>9</td>
+					</tr>
+					<tr>
+						<td>Birds</td>
+						<td>3</td>
+						<td>2</td>
+						<td>0</td>
+						<td>1</td>
+						<td>12</td>
+						<td>8</td>
+						<td>4</td>
+						<td>6</td>
+					</tr>
+					<tr>
+						<td>Ravens</td>
+						<td>3</td>
+						<td>0</td>
+						<td>1</td>
+						<td>2</td>
+						<td>10</td>
+						<td>9</td>
+						<td>1</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>Bulls</td>
+						<td>3</td>
+						<td>0</td>
+						<td>1</td>
+						<td>2</td>
+						<td>16</td>
+						<td>2</td>
+						<td>-14</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>Titans</td>
+						<td>3</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>26</td>
+						<td>1</td>
+						<td>-25</td>
+						<td>0</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">Brought to you by Joshua Ashinhurst, Carlos Rubio, and Franz Chavez as part of CSE389 Project</span>
+        </div>
+    </footer>
+	<script>
+        $("#team_table").editableTableWidget().find('td:first').focus();
+	</script>
+</body>
+</html>
