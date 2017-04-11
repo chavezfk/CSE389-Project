@@ -9,21 +9,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="js/mindmup-editabletable.js"></script>
-  <script>
-    function signIn() {
-        var userType;
-        userType = document.getElementById('user-input');
-        if (!userType.value.localeCompare("manager")) {
-            window.location.href = 'manager/schedule.html'
-        } else if (!userType.value.localeCompare("captain")) {
-            window.location.href = 'captain/schedule.html'
-        } else if (!userType.value.localeCompare("referee")) {
-            window.location.href = 'referee/schedule.html'
-        } else {
-            window.location.href = 'index.html'
-        }
-    }
-  </script>
 </head>
 <body>
 	<div class="navbar navbar-inverse">
@@ -49,6 +34,11 @@
                                          <button type="submit" class="btn btn-primary btn-block">Sign in</button>
                                     </div>
                                 </form>
+                                <div style="display: inline-block">
+                                    <a href="manager/schedule.html">M</a>
+                                    <a href="referee/schedule.html">R</a>
+                                    <a href="captain/schedule.html">C</a>
+                                </div>
                             </div>
                         </li>
                     </ul>
