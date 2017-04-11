@@ -9,6 +9,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="../js/mindmup-editabletable.js"></script>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery.bracket.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/jquery.bracket.min.css" />
+  
+  
 </head>
 <body>
 	<div class="navbar navbar-inverse">
@@ -33,8 +38,9 @@
 	</div>
     <div class="container">
         <h2 class="well text-center">Bracket<small> Select game to view details</small></h2>
-        <div class="col-sm-8">
-            <img alt="bracket" src="../img/bracket.png" style="height: auto; width: 700px">
+        <div id="bracket" class="col-sm-8">
+            <!--<img alt="bracket" src="../img/bracket.png" style="height: auto; width: 700px"> -->
+            
         </div>
         <div class="col-sm-4">
             <table class="table table-bordered" id="match_table">
@@ -88,7 +94,8 @@
             <br>
         </div>
         <div class="well col-sm-12 text-center">
-            <a type="button" class="btn btn-default" href="schedule.html">Return</a>
+            <a type="button" class="btn btn-default" href="schedule.html">Confirm</a>
+            <a type="button" class="btn btn-default" href="leagues.html">Review</a>
         </div>
     </div>
     <footer class="footer">
@@ -96,5 +103,59 @@
             <span class="text-muted">Brought to you by Joshua Ashinhurst, Carlos Rubio, and Franz Chavez as part of CSE389 Project</span>
         </div>
     </footer>
+    
+    <script>
+    var autoCompleteData = {
+        teams : [
+          ['Lions', 'Tigers'],
+          ['Cats', 'Bears'],
+          ['Deers','Falcons'],
+          ['Wildebeasts','wildCats'],
+        ],
+        results : [[4,1]]
+      }
+     
+    /* Data for autocomplete */
+    var acData = ["kr:MC", "ca:HuK", "se:Naniwa", "pe:Fenix",
+                  "us:IdrA", "tw:Sen", "fi:Naama"]
+     
+    /* If you call doneCb([value], true), the next edit will be automatically 
+       activated. This works only in the first round. */
+    function acEditFn(container, data, doneCb) {
+      /*var input = $('<input type="text">')
+      input.val(data)
+      input.autocomplete({ source: acData })
+      input.blur(function() { doneCb(input.val()) })
+      input.keyup(function(e) { if ((e.keyCode||e.which)===13) input.blur() })
+      container.html(input)
+      input.focus()*/
+    }
+     
+    function acRenderFn(container, data, score, state) {
+      switch(state) {
+        case 'empty-bye':
+          container.append('BYE')
+          return;
+        case 'empty-tbd':
+          container.append('TBD')
+          return;
+     
+        case 'entry-no-score':
+        case 'entry-default-win':
+        case 'entry-complete':
+          /*var fields = data.split(':')
+          if (fields.length != 2)
+            container.append('<i>INVALID</i>')
+          else
+            container.append('<img src="site/png/'+fields[0]+'.png"> ').append(fields[1])
+          return;*/
+      }
+    }
+     
+    $(function() {
+        $('#bracket').bracket({
+          init: autoCompleteData,})
+      })
+    </script>
 </body>
 </html>
