@@ -105,12 +105,12 @@
     </footer>
     
     <script>
-    var autoCompleteData = {
+    var initData = {
         teams : [
-          ['Lions', 'Tigers'],
-          ['Cats', 'Bears'],
-          ['Deers','Falcons'],
-          ['Wildebeasts','wildCats'],
+          [{name: 'Lions'}, {name: 'Tigers'}],
+          [{name: 'Cats'}, {name: 'Bears'}],
+          [{name: 'Deers'},{name:'Falcons'}],
+          [{name:'Wildebeasts'},{name:'wildCats'}],
         ],
         results : [[4,1]]
       }
@@ -121,17 +121,21 @@
      
     /* If you call doneCb([value], true), the next edit will be automatically 
        activated. This works only in the first round. */
-    function acEditFn(container, data, doneCb) {
-      /*var input = $('<input type="text">')
+    function EditFn(container, data, doneCb) {
+      var input = $('<input type="text">')
       input.val(data)
-      input.autocomplete({ source: acData })
+      //input.autocomplete({ source: acData })
       input.blur(function() { doneCb(input.val()) })
       input.keyup(function(e) { if ((e.keyCode||e.which)===13) input.blur() })
       container.html(input)
-      input.focus()*/
+      input.focus()
+    }
+    
+    function onclick(data){
+        alert(data.name);
     }
      
-    function acRenderFn(container, data, score, state) {
+    function RenderFn(container, data, score, state){
       switch(state) {
         case 'empty-bye':
           container.append('BYE')
@@ -143,18 +147,16 @@
         case 'entry-no-score':
         case 'entry-default-win':
         case 'entry-complete':
-          /*var fields = data.split(':')
-          if (fields.length != 2)
-            container.append('<i>INVALID</i>')
-          else
-            container.append('<img src="site/png/'+fields[0]+'.png"> ').append(fields[1])
-          return;*/
+            container.append(data.name)
+          return;
       }
     }
      
     $(function() {
         $('#bracket').bracket({
-          init: autoCompleteData,})
+          init: initData,
+          decorator: {edit: EditFn, render: RenderFn}
+          })
       })
     </script>
 </body>
