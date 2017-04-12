@@ -122,7 +122,7 @@
        activated. This works only in the first round. */
     function EditFn(container, data, doneCb) {
       var input = $('<input type="text">')
-      input.val(data)
+      input.val(data.name)
       //input.autocomplete({ source: acData })
       input.blur(function() { doneCb(input.val()) })
       input.keyup(function(e) { if ((e.keyCode||e.which)===13) input.blur() })
@@ -130,10 +130,6 @@
       input.focus()
     }
     
-    function onclick(data){
-        alert(data.name);
-    }
-     
     function RenderFn(container, data, score, state){
       switch(state) {
         case 'empty-bye':
